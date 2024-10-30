@@ -24,5 +24,6 @@ onMounted(() => {
 <style scoped> 
 p {
     color: red;
+    margin: 10px;    
 }
 </style>
