@@ -1,9 +1,5 @@
 <script setup>
 defineProps({
-    type: {
-        type: String,
-        default: 'text'
-    },
     placeholder: {
         type: String,
         default: 'Enter your text'
@@ -20,7 +16,7 @@ defineEmits(['update:modelValue'])
 </script>
 
 <template>
-    <input :type="type" :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
+    <input type="text" :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
 </template>
 
 <style scoped>

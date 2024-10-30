@@ -30,7 +30,6 @@ button {
     color: white;
     cursor: pointer;
     margin: 10px;
-    width: 100%;
 }
 
 .btn-secundario {
