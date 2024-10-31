@@ -1,7 +1,11 @@
-<script setup>
-import FormLogin from './components/login/FormLogin.vue';
-</script>
-
 <template>
-    <FormLogin />
+    <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/dashboard">Dashboard</RouterLink>
+    </nav>
+    <main>
+        
+    <RouterView />
+    </main>
 </template>
