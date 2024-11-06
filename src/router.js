@@ -5,9 +5,9 @@ import { createMemoryHistory, createRouter } from "vue-router";
  import HomePage from './pages/HomePage.vue'
 
  const routes = [
-    {path:"/", component: HomePage},
-    {path:"/login", component: LoginPage},
-    {path:"/dashboard",component:DashboardPage}
+    {path:"/", name:"home", component: HomePage},
+    {path:"/login", name:"login", component: LoginPage},
+    {path:"/dashboard", name:"dashboard", component:DashboardPage}
  ]
 
  const router = createRouter({
