@@ -16,7 +16,7 @@ defineEmits(['update:modelValue'])
 </script>
 
 <template>
-    <input type="text" :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
+    <input type="email" :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue', $event.target.value)" />
 </template>
 
 <style scoped>

@@ -18,6 +18,6 @@ const logout = () => {
 
 </script>
 <template>
-    <h1>Dashboard</h1>
-    <button @click="logout">Logout</button>
+    <h1 data-testid="dashboard-title">Dashboard</h1>
+    <button data-testid="logout-button" @click="logout">Logout</button>
 </template>

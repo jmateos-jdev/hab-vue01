@@ -18,7 +18,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <p>{{ errorMessage }}</p>
+    <p id="error-message">{{ errorMessage }}</p>
 </template>
 
 <style scoped> 

@@ -24,6 +24,8 @@ const navigateTo = (page) => {
 
 const handleLogin = async (event) => {
     event.preventDefault();
+    console.log("EMAIL", email.value);
+    console.log("PASSWORD", password.value);
     if (email.value === '' || password.value === '') {
         errorMessage.value = 'Por favor, ingrese un correo electrónico y una contraseña';
     } else {
@@ -78,10 +80,10 @@ onBeforeMount(async () => {
 <template>
     <form @submit="handleLogin">
         <slot>
-            <InputText placeholder="Correo electrónico" v-model="email" required />
-            <InputPassword placeholder="Contraseña" v-model="password" required />
-            <Button text="Iniciar sesión" type="principal" />
-            <ErrorMessage v-if="errorMessage != ''" :errorMessage="errorMessage"
+            <InputText id="email" placeholder="Correo electrónico" v-model="email"  />
+            <InputPassword id="password" placeholder="Contraseña" v-model="password"  />
+            <Button id="login-button" text="Iniciar sesión" type="principal"  />
+            <ErrorMessage v-if="errorMessage !== ''" :errorMessage="errorMessage"
                 @update:errorMessage="errorMessage = $event" />
         </slot>
     </form>

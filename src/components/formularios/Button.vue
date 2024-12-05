@@ -18,7 +18,7 @@ defineEmits(['click'])
 </script>
 
 <template>
-    <button @click="$emit('click')" :class="`btn-${type}`">{{ text }}</button>
+    <button type="submit" @click="$emit('click')" :class="`btn-${type}`">{{ text }}</button>
 </template>
 
 <style scoped>
